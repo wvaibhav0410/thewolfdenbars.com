@@ -1,0 +1,5 @@
+.food-menu-nav .food-menu-nav-item span {
+    top: 0;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+}

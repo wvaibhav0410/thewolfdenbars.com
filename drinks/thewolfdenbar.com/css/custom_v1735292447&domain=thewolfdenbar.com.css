@@ -1,0 +1,1855 @@
+@import url("//fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+/*
+Heading fonts: Lexend, sans-serif
+Body fonts: Lexend, sans-serif
+Subheading fonts: Lexend, sans-serif
+Navigtion fonts: Lexend, sans-serif
+Button fonts: Lexend, sans-serif
+*/
+/* Push -> animation 1 */
+@-webkit-keyframes a-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes a-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* Custom style */
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lexend", sans-serif;
+}
+
+p {
+  font-weight: 300;
+}
+
+.nav-v7 .navbar-logo .header-logo {
+  max-width: 450px;
+}
+
+.navbar-regular.nav-v7 .navbar-nav > li > a,
+.nav-v7 li.drop-down-link div.drop-down {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  border-right: none !important;
+  text-transform: uppercase;
+}
+
+.navbar.nav-v6 .social-square .contact-icon:hover i {
+  color: #1C1B1A;
+}
+
+.navbar-regular.nav-v6 .navbar-nav > li > a:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 2px;
+  right: 100%;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  bottom: -3px;
+  height: 2px;
+  background: #fff;
+}
+
+.navbar-regular.nav-v6.nav-scroll .navbar-nav > li > a:before {
+  background: #fff;
+}
+
+.drink-menu .navbar-regular.nav-v6 .navbar-nav > li > a:before {
+  background: #fff;
+}
+
+.drink-menu .navbar-regular.nav-v6.nav-scroll .navbar-nav > li > a:before {
+  background: #fff;
+}
+
+.navbar-regular.nav-v6 .navbar-nav > li > a:hover:before,
+.navbar-regular.nav-v6 .navbar-nav > li > a:focus:before,
+.navbar-regular.nav-v6 .navbar-nav > .active > a:before,
+.navbar-regular.nav-v6 .navbar-nav > .active > a:focus:before,
+.navbar-regular.nav-v6 .navbar-nav > .active > a:hover:before {
+  right: 2px;
+}
+
+.section-header,
+.about-us-v8-content .text-wrapper h1,
+.about-us-v7-content .text-wrapper h1,
+.about-us-v6-content .text-wrapper h1,
+.specials-v3.home-specials h1,
+.specials h1,
+.events-container h1,
+.about-us-page .about-us-s1-content h1,
+.custom-modal .newsletter-popup .section-header {
+  text-transform: capitalize;
+  font-family: "Lexend", sans-serif;
+  font-weight: 800;
+  font-size: 4em;
+}
+
+.about-us-v8-content .text-wrapper h2,
+.reviews-v2-wrapper h2,
+.tmt-section h2,
+.custom_html_2-section h2,
+.custom_html_1-section h2,
+.map-newsletter h2 {
+  font-family: "Lexend", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.custom-temp-btn,
+.uk-overlay-panel a.custom-temp-btn,
+.on-cover-content .section-wrapper a.custom-temp-btn,
+.about-us-v6-wrapper .text-wrapper .text-content .custom-temp-btn,
+.about-us-v7-content .text-wrapper .text-content .custom-temp-btn,
+.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn,
+.custom-about-us-v8-wrapper.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn,
+.map-newsletter .sph-email-subscription .sph-submit-button,
+.custom-modal .newsletter-popup .sph-email-subscription .sph-submit-button,
+.addtocalendar.atc-style-blue .atcb-link,
+.specials-v3.home-specials div a.custom-temp-btn,
+.food-menu-nav .food-menu-nav-item,
+.food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item,
+.drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item,
+.locations-page .food-menu-nav .food-menu-nav-item,
+.locations-page .location-info-item .custom-temp-btn,
+.locations-v2-page .items-holder .custom-temp-btn,
+.about-us-page .custom-temp-btn,
+.about-us-page .about-us-v7-content .text-wrapper .text-content .custom-temp-btn,
+.about-us-page .about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn,
+.reservations-and-parties .custom-temp-btn,
+.party.reservations-page .custom-temp-btn,
+.party.party-images .custom-temp-btn,
+.party.catering .custom-temp-btn,
+.party.jobs-page .custom-temp-btn {
+  padding: 8px 40px;
+  text-transform: capitalize;
+  background-color: #152953;
+  background: #152953;
+  color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.4em;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
+}
+
+.custom-temp-btn:hover,
+.custom-temp-btn:focus,
+.custom-temp-btn:active,
+.uk-overlay-panel a.custom-temp-btn:hover,
+.on-cover-content .section-wrapper a.custom-temp-btn:hover,
+.about-us-v6-wrapper .text-wrapper .text-content .custom-temp-btn:hover,
+.about-us-v7-content .text-wrapper .text-content .custom-temp-btn:hover,
+.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn:hover,
+.custom-about-us-v8-wrapper.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn:hover,
+.specials-v3.home-specials div a.custom-temp-btn:hover,
+.map-newsletter .sph-email-subscription .sph-submit-button:hover,
+.custom-modal .newsletter-popup .sph-email-subscription .sph-submit-button:hover,
+.addtocalendar.atc-style-blue .atcb-link:hover,
+.tmt-section a.custom-temp-btn:hover,
+.food-menu-nav .food-menu-nav-item:hover,
+.food-menu-nav .food-menu-nav-item:focus,
+.food-menu-nav .food-menu-nav-item.active,
+.food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:hover,
+.food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:focus,
+.food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item.active,
+.drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:hover,
+.drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:focus,
+.drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item.active,
+.locations-page .food-menu-nav .food-menu-nav-item:hover,
+.locations-page .food-menu-nav .food-menu-nav-item:focus,
+.locations-page .food-menu-nav .food-menu-nav-item.active,
+.locations-page .location-info-item .custom-temp-btn:hover,
+.locations-page .location-info-item .custom-temp-btn:focus,
+.locations-v2-page .items-holder .custom-temp-btn:hover,
+.locations-v2-page .items-holder .custom-temp-btn:focus,
+.about-us-page .custom-temp-btn:hover,
+.about-us-page .about-us-v7-content .text-wrapper .text-content .custom-temp-btn:hover,
+.about-us-page .about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn:hover,
+.reservations-and-parties .custom-temp-btn:hover,
+.party.reservations-page .custom-temp-btn:hover,
+.party.party-images .custom-temp-btn:hover,
+.party.catering .custom-temp-btn:hover,
+.party.jobs-page .custom-temp-btn:hover {
+  text-decoration: none;
+  background-color: #fff;
+  background: #fff;
+  color: #152953;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  opacity: 1;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: a-push;
+  animation-name: a-push;
+}
+
+.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn, .custom-about-us-v8-wrapper.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn, .map-newsletter .sph-email-subscription .sph-submit-button,
+.custom-modal .newsletter-popup .sph-email-subscription .sph-submit-button {
+  background-color: #152953;
+  background: #152953;
+  color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #152953;
+}
+
+.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn:hover, .custom-about-us-v8-wrapper.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn:hover, .map-newsletter .sph-email-subscription .sph-submit-button:hover,
+.custom-modal .newsletter-popup .sph-email-subscription .sph-submit-button:hover {
+  background-color: #fff;
+  background: #fff;
+  color: #152953;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #152953;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription .sph-submit-button,
+.addtocalendar.atc-style-blue .atcb-link {
+  overflow-x: hidden;
+}
+
+/* Gallery hover initial */
+.gallery-hover {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.gallery-hover a,
+.gallery-hover .image-holder {
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+.gallery-hover a:hover,
+.gallery-hover .image-holder:hover {
+  text-decoration: none;
+}
+.gallery-hover img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-hover .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.8);
+}
+.gallery-hover .info h3,
+.gallery-hover .info p {
+  display: none;
+}
+.gallery-hover .info h3 {
+  margin: 0 auto;
+  padding: 5px;
+  color: #fff;
+  font-size: 1.5em;
+}
+.gallery-hover .info p {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 15px;
+  line-height: 1.1em;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+/* Gallery hover initial END */
+/*HOMEPAGE*/
+/* Line borders setup */
+.plain-line-border,
+.plain-line-border:before {
+  height: 10px;
+}
+
+.section-wrapper .top-line-border:before,
+.section-wrapper .bottom-line-border:before {
+  left: 0;
+  right: 0;
+}
+
+.section-wrapper.animation-element .top-line-border:before,
+.section-wrapper.animation-element .bottom-line-border:before,
+.animation-element .top-line-border:before,
+.animation-element .bottom-line-border:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.section-wrapper.animation-element.animate .top-line-border:before,
+.section-wrapper.animation-element.animate .bottom-line-border:before,
+.animation-element.animate .top-line-border:before,
+.animation-element.animate .bottom-line-border:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+/* END Line borders setup */
+/* Slideshow and cover content */
+.uk-overlay-background {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.on-cover-content .section-wrapper .section-header,
+.uk-overlay-panel h1 {
+  margin-top: 70px;
+  text-transform: uppercase;
+  font-family: "Lexend", sans-serif;
+  font-weight: 800;
+  font-size: 4.2em;
+}
+
+.home-page .uk-slidenav-contrast,
+.home-page .uk-slidenav-contrast:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.home-page .uk-slidenav-contrast:hover {
+  color: white;
+}
+
+.home-page .uk-slidenav-contrast.uk-slidenav:focus-visible {
+  outline-color: #fff;
+}
+
+.home-page .uk-dotnav-contrast > * > * {
+  background: transparent;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+
+.home-page .uk-dotnav-contrast > .uk-active > *,
+.home-page .uk-dotnav-contrast > * > :focus,
+.home-page .uk-dotnav-contrast > * > :hover {
+  background: #fff;
+  border: 1px solid #fff;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.home-page .uk-dotnav-contrast.uk-dotnav a:focus-visible {
+  outline-color: #fff;
+}
+
+.on-cover-content .section-wrapper .buttons-group-holder,
+.uk-overlay-panel .buttons-group-holder {
+  padding-top: 15px;
+}
+
+/* Slideshow and cover content end*/
+/*Banner section*/
+.banner-section {
+  padding: 30px 0;
+  background: #000;
+  color: #fff;
+}
+
+.banner-section .container {
+  text-align: center;
+}
+
+.banner-section h1 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-section .banner-pin {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.banner-section .banner-pin:hover,
+.banner-section .banner-pin:focus,
+.banner-section .banner-pin.active {
+  color: #fff;
+}
+
+/*Banner section end*/
+/*About us section*/
+.about-us-v8-wrapper:before {
+  background-position: left top;
+}
+
+.about-us-v8-content .text-wrapper h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #1C1B1A;
+}
+
+/*About us section end*/
+/*Custom about us section*/
+.about-us-v8-wrapper.custom-about-us-v8-wrapper:before {
+  background-position: left top;
+}
+
+.custom-about-us-v8-wrapper .about-us-v8-content .text-wrapper h2 {
+  color: #1C1B1A;
+}
+
+/*Custom about us section end*/
+/*Custom html 1 section*/
+.custom_html_1-section {
+  background-image: url("../../drinks.namoapps.co/website_images/ab_websites/346270_website_v1/intro.jpg");
+  background-position: center;
+  color: #000;
+  background-color: #fff;
+}
+
+.custom_html_1-section .container,
+.custom_html_1-section h1 {
+  text-align: center;
+}
+
+.custom_html_1-section h1 {
+  margin-top: 0;
+}
+
+.custom_html_1-section h2 {
+  margin: 25px auto;
+}
+
+.custom_html_1-section p {
+  text-align: center !important;
+}
+
+/*Custom html 1 section end*/
+/*Custom html 2 section*/
+.custom_html_2-section {
+  color: #fff;
+  background-color: #152953;
+}
+
+.custom_html_2-section .container,
+.custom_html_2-section h1 {
+  text-align: center;
+}
+
+.custom_html_2-section h1 {
+  margin-top: 0;
+}
+
+.custom_html_2-section h2 {
+  margin: 25px auto;
+}
+
+.custom_html_2-section p {
+  text-align: center !important;
+}
+
+/*Custom html 2 section end*/
+/*TMT section*/
+.tmt-section h1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.tmt-section h2 {
+  margin-top: 10px;
+}
+
+.tmt-section p {
+  font-size: 1.3em;
+  margin: 20px auto;
+}
+
+.tmt-section a.custom-temp-btn {
+  margin: 0 5px 20px;
+}
+
+.reservations-tmt-section {
+  background-position: center;
+}
+
+.order-tmt-section {
+  background-position: center;
+}
+
+.private-parties-tmt-section {
+  background-position: center;
+}
+
+.catering-tmt-section {
+  background-position: center;
+}
+
+.jobs-tmt-section {
+  background-position: center;
+}
+
+/*TMT section end*/
+/*Gallery section V4*/
+.gallery-v4-wrapper {
+  background-color: #3a3a3a;
+}
+
+/*Gallery section V4 end*/
+.fancybox-skin {
+  border-radius: 0;
+}
+
+/*Reviews section*/
+.reviews-v2-wrapper {
+  background-position: center !important;
+}
+
+.reviews-v2-wrapper h1 {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #152953;
+  z-index: 1;
+}
+
+.reviews-v2-wrapper h2 {
+  margin-top: 0;
+  color: #1C1B1A;
+}
+
+.reviews-v2-wrapper h3 {
+  font-family: "Lexend", sans-serif;
+  text-transform: capitalize;
+  margin: 20px auto 15px;
+  color: #1C1B1A;
+}
+
+.reviews-v2-wrapper h3 .fa.fa-star {
+  color: #152953;
+  font-size: 0.8em;
+}
+
+.reviews-v2-wrapper .review-quote {
+  color: #1C1B1A;
+  opacity: 1;
+}
+
+.reviews-v2-wrapper .review-text {
+  padding-top: 0;
+}
+
+.reviews-v2-wrapper .review-text p {
+  line-height: 1.5em;
+}
+
+.owl-theme .owl-dots .owl-dot button {
+  background: transparent;
+  border: 1px solid #1C1B1A;
+  opacity: 1;
+}
+
+.owl-theme .owl-dots .owl-dot.active button,
+.owl-theme .owl-dots .owl-dot:hover button {
+  background: #1C1B1A;
+  border: 1px solid #1C1B1A;
+  opacity: 1;
+}
+
+.reviews-v2-wrapper .owl-theme .owl-dots .owl-dot button:focus-visible {
+  outline: 1px solid #1C1B1A;
+  outline-offset: 2px;
+}
+
+.reviews-v2-wrapper .owl-carousel .owl-nav button,
+.reviews-v2-wrapper .owl-carousel .owl-nav button:focus {
+  color: rgba(28, 27, 26, 0.7);
+}
+
+.reviews-v2-wrapper .owl-carousel .owl-nav button:hover {
+  color: #1c1b1a;
+}
+
+.reviews-v2-wrapper .owl-carousel .owl-nav button:focus-visible {
+  outline: 1px solid #1C1B1A;
+  outline-offset: 2px;
+}
+
+/*Reviews section end*/
+/* Newsletter common option for newsletter sections and popup */
+.sph-email-subscription .sph-email-form input::-webkit-input-placeholder {
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+.sph-email-subscription .sph-email-form input:focus::-webkit-input-placeholder {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+
+/*Newsletter section*/
+.map-newsletter {
+  border-right: none;
+}
+
+.map-newsletter .text-wrapper:before {
+  background-color: #E6E6E6;
+}
+
+.map-newsletter .text-wrapper:before {
+  background-position: top left;
+}
+
+.map-newsletter .section-header {
+  padding-bottom: 15px;
+  color: #152953;
+}
+
+.map-newsletter h2 {
+  color: #000;
+}
+
+.map-newsletter .sph-email-subscription h2 {
+  margin-bottom: 20px;
+  font-family: "Lexend", sans-serif;
+  color: #1C1B1A;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.map-newsletter .sph-email-subscription .sph-email-input {
+  padding: 8px 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #fff;
+  color: #1C1B1A;
+  border-bottom: 2px solid #1C1B1A;
+  border-width: 2px;
+}
+
+.map-newsletter .sph-email-subscription input::-webkit-input-placeholder {
+  color: #1C1B1A;
+}
+
+.map-newsletter .sph-email-subscription input:-moz-placeholder { /* Firefox 18- */
+  color: #1C1B1A;
+}
+
+.map-newsletter .sph-email-subscription input::-moz-placeholder { /* Firefox 19+ */
+  color: #1C1B1A;
+}
+
+.map-newsletter .sph-email-subscription input:-ms-input-placeholder {
+  color: #1C1B1A;
+}
+
+.map-newsletter .bar {
+  top: -8px;
+}
+
+.map-newsletter .bar:before,
+.map-newsletter .bar:after {
+  background: #294B93;
+}
+
+.googlemap-v3-wrapper .triangle {
+  display: none;
+}
+
+.sph-response-message {
+  color: #1C1B1A;
+}
+
+.googlemap-v3-wrapper input:-webkit-autofill,
+.googlemap-v3-wrapper input:-webkit-autofill:hover,
+.googlemap-v3-wrapper input:-webkit-autofill:focus,
+.googlemap-v3-wrapper input:-webkit-autofill:active {
+  -webkit-text-fill-color: #1C1B1A;
+  color: #1C1B1A !important;
+}
+
+.map-newsletter .sph-email-subscription label {
+  color: #1C1B1A;
+}
+
+/*Newsletter section end*/
+/*Newsletter popup section*/
+.custom-modal .modal-content {
+  background-color: #E6E6E6;
+}
+
+.custom-modal .newsletter-popup .section-header {
+  color: #152953;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription h2,
+.custom-modal .newsletter-popup .sph-email-subscription label h2 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.3em;
+  color: #1C1B1A;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription h2 {
+  font-weight: 300;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription .sph-email-input {
+  color: #1C1B1A;
+  border: 1px solid #1C1B1A;
+  background-color: #fff;
+  padding: 9px 5px;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription .sph-email-input::-webkit-input-placeholder {
+  color: #1C1B1A;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription .sph-email-input:-moz-placeholder { /* Firefox 18- */
+  color: #1C1B1A;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription .sph-email-input::-moz-placeholder { /* Firefox 19+ */
+  color: #1C1B1A;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription .sph-email-input:-ms-input-placeholder {
+  color: #1C1B1A;
+}
+
+.custom-modal .newsletter-popup .sph-email-subscription input:-webkit-autofill,
+.custom-modal .newsletter-popup .sph-email-subscription input:-webkit-autofill:hover,
+.custom-modal .newsletter-popup .sph-email-subscription input:-webkit-autofill:focus,
+.custom-modal .newsletter-popup .sph-email-subscription input:-webkit-autofill:active {
+  -webkit-text-fill-color: #1C1B1A;
+  color: #1C1B1A !important;
+}
+
+.custom-modal .newsletter-popup .bar:before,
+.custom-modal .newsletter-popup .bar:after {
+  background: #294B93;
+}
+
+.map-newsletter .sph-email-subscription label,
+.custom-modal .newsletter-popup .sph-email-subscription label {
+  font-family: "Lexend", sans-serif !important;
+  color: #1C1B1A;
+  text-transform: none;
+  font-weight: 300 !important;
+}
+
+.custom-modal .close {
+  color: #000;
+  opacity: 1;
+}
+
+.custom-modal .close:hover {
+  color: #000;
+  opacity: 0.8;
+}
+
+/*Newsletter popup section end*/
+/*Newsletter response message*/
+.sph-response-message {
+  font-size: 1.4em;
+}
+
+/*Openstreetmap section*/
+.maps-wrapper .custom-temp-btn.reset-zoom-btn,
+.maps-wrapper.about-us-s3-wrapper .reset-zoom-btn {
+  right: 7px;
+}
+
+/*Openstreetmap section end*/
+/*Contact section*/
+.contact-v3 {
+  background: #1C1B1A;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-v3::before {
+  background: #1C1B1A;
+}
+
+.contact-v3 .hours-title h1,
+.contact-v3 .social-title h1,
+.contact-v3 .contact-us-title h1 {
+  font-family: "Lexend", sans-serif;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.contact-v3 .contact-us p {
+  margin: 0;
+}
+
+.contact-v3 .days {
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.contact-v3 .from-to {
+  text-transform: lowercase;
+}
+
+.contact-v3 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-v3 a:focus {
+  color: #fff;
+}
+
+/*Contact section end*/
+.footer-v2-wrapper {
+  background-color: #1C1B1A;
+}
+
+.footer-v2-wrapper p {
+  font-size: 1.3em;
+}
+
+/*HOMEPAGE END*/
+/*ABOUT US PAGE*/
+.about-page-content {
+  min-height: 100vh;
+}
+
+#about_s4_section {
+  display: none;
+}
+
+.about-page-content .about-us-v7-wrapper .about-us-v7-content:first-of-type {
+  background-position: center;
+}
+
+.about-page-content .about-us-v7-content .text-wrapper:before {
+  background-position: center;
+}
+
+.about-page-content .about-us-v7-content .text-wrapper .text-content {
+  padding: 40px 6%;
+}
+
+.about-page-content .about-us-v7-content .text-wrapper .text-content,
+.about-page-content .about-us-v7-content .text-wrapper .text-content * {
+  text-align: left !important;
+}
+
+/*ABOUT US PAGE END*/
+/*FOOD AND DRINKS PAGE*/
+.food-menu-page:before {
+  z-index: 0;
+}
+
+.food-menu-page {
+  background: #000;
+}
+
+.food-menu-page .food-menu-v2-wrapper,
+.drink-menu-page .drink-menu-v2-wrapper {
+  padding-top: 85px;
+}
+
+.food-menu-v2-wrapper .section-header,
+.drink-menu-v2-wrapper .section-header {
+  color: #fff;
+}
+
+.food-menu-nav .food-menu-nav-item {
+  padding: 8px 40px;
+}
+
+.food-menu-grid-item-content {
+  border-radius: 0;
+}
+
+.drink-menu .food-menu-page h2,
+.drink-menu .drink-menu-page h2,
+.food-menu-grid h2 {
+  font-family: "Lexend", sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #152953;
+}
+
+.food-menu-grid h3,
+.food-menu-grid .food-price {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.3em;
+}
+
+.food-menu-grid p,
+.food-menu-grid .food-item-description {
+  font-size: 1.2em;
+}
+
+.food-menu-grid-item-content .food-menu-content {
+  border-left: 1px solid #1C1B1A;
+}
+
+.food-menu-grid p,
+.food-menu-grid .menu-description p {
+  color: #fff;
+}
+
+.food-menu-grid .food-menu-description p {
+  color: #1C1B1A;
+}
+
+.food-menu-grid .food-item-description {
+  color: #1C1B1A;
+}
+
+.food-menu-grid h3,
+.food-menu-grid .food-price {
+  color: #1C1B1A;
+}
+
+.food-menu-grid .food-price {
+  color: #1C1B1A;
+}
+
+.food-menu-page .food-menu-grid-item-content {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.food-menu-page .food-menu-grid .food-item-holder {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+/* Drinks only set*/
+.drink-menu-page:before {
+  z-index: 0;
+}
+
+.drink-menu-page {
+  background: #000;
+}
+
+.drink-menu-v2-wrapper .food-menu-grid-item-content .food-menu-content {
+  border-left: 1px solid #1C1B1A;
+}
+
+.drink-menu-v2-wrapper .section-header {
+  color: #fff;
+}
+
+.drink-menu-v2-wrapper h2,
+.drink-menu .drink-menu-page h2 {
+  color: #152953;
+  text-transform: uppercase;
+}
+
+.drink-menu-v2-wrapper .food-menu-grid p,
+.drink-menu-grid .menu-description p {
+  color: #fff;
+}
+
+.drink-menu-v2-wrapper .food-menu-grid .food-menu-description p {
+  color: #1C1B1A;
+}
+
+.drink-menu-v2-wrapper .food-menu-grid .food-item-description {
+  color: #1C1B1A;
+}
+
+.drink-menu-v2-wrapper .food-menu-grid h3,
+.drink-menu-v2-wrapper .food-menu-grid .food-price {
+  color: #1C1B1A;
+}
+
+.drink-menu-v2-wrapper .food-menu-grid .food-price {
+  color: #1C1B1A;
+}
+
+.food-menu-page .drink-menu-v2-wrapper .food-menu-grid-item-content {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.food-menu-page .drink-menu-v2-wrapper .food-menu-grid .food-item-holder {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.food-menu-v2-wrapper .empty-content-message h2,
+.food-menu-v2-wrapper .empty-content-message h3 {
+  color: #fff;
+}
+
+.drink-menu-v2-wrapper .empty-content-message h2,
+.drink-menu-v2-wrapper .empty-content-message h3 {
+  color: #fff;
+}
+
+/*FOOD AND DRINKS PAGE END*/
+/*SPECIALS PAGE*/
+.onespecial {
+  font-size: 1.2em;
+}
+
+.specials h1 {
+  color: #fff;
+}
+
+.specials h2 {
+  color: #fff;
+}
+
+/*SPECIALS PAGE END*/
+/*EVENTS PAGE*/
+.event-content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.events-container h1 {
+  color: #fff;
+}
+
+.events-container h2 {
+  font-weight: 400;
+  font-size: 2em;
+  color: #fff;
+}
+
+.events-container .event-main-text,
+.events-container .event-info-text p,
+.events-container .event-time {
+  font-family: "Lexend", sans-serif;
+}
+
+.atc-style-blue .atcb-list {
+  width: 100%;
+}
+
+/*EVENTS PAGE END*/
+/*GIFT CARDS PAGE*/
+.gift-cards-page h1 {
+  margin-top: 35px;
+}
+
+/*GIFT CARDS PAGE END*/
+/* TMT PAGES */
+/* TMT PAGES END */
+.drink-menu .pagecontent {
+  padding-top: 150px;
+}
+
+.empty-content-message h2,
+.empty-content-message h3,
+.food-menu-page .empty-content-message h2,
+.food-menu-page .empty-content-message h3 {
+  text-transform: none;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.3em;
+}
+
+/* Gallery hover effect 1 */
+/* Gallery hover animation_1: image zoom no info panel */
+.gallery-hover.animation_1 .img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.gallery-hover.animation_1 a:hover .img,
+.gallery-hover.animation_1 .image-holder:hover .img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* Gallery hover effects 4, 5, 6 */
+.gallery-hover.animation_4 .img,
+.gallery-hover.animation_5 .img,
+.gallery-hover.animation_6 .img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.gallery-hover.animation_4 .info,
+.gallery-hover.animation_5 .info,
+.gallery-hover.animation_6 .info {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-hover.animation_4 .info h3, .gallery-hover.animation_4 .info p,
+.gallery-hover.animation_5 .info h3,
+.gallery-hover.animation_5 .info p,
+.gallery-hover.animation_6 .info h3,
+.gallery-hover.animation_6 .info p {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-hover.animation_4 a:hover .img,
+.gallery-hover.animation_4 .image-holder:hover .img,
+.gallery-hover.animation_5 a:hover .img,
+.gallery-hover.animation_5 .image-holder:hover .img,
+.gallery-hover.animation_6 a:hover .img,
+.gallery-hover.animation_6 .image-holder:hover .img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.gallery-hover.animation_4 a:hover .info,
+.gallery-hover.animation_4 .image-holder:hover .info,
+.gallery-hover.animation_5 a:hover .info,
+.gallery-hover.animation_5 .image-holder:hover .info,
+.gallery-hover.animation_6 a:hover .info,
+.gallery-hover.animation_6 .image-holder:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Gallery hover animation_4: image zoom and info panel overlay fade in, text slide bottom to top */
+.gallery-hover.animation_4 .info h3 {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.gallery-hover.animation_4 .info p {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.gallery-hover.animation_4 a:hover .info h3,
+.gallery-hover.animation_4 a:hover .info p,
+.gallery-hover.animation_4 .image-holder:hover .info h3,
+.gallery-hover.animation_4 .image-holder:hover .info p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* Gallery hover animation_5: image zoom and info panel overlay fade in, text slide top to bottom */
+.gallery-hover.animation_5 .info h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.gallery-hover.animation_5 .info p {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.gallery-hover.animation_5 a:hover .info h3,
+.gallery-hover.animation_5 a:hover .info p,
+.gallery-hover.animation_5 .image-holder:hover .info h3,
+.gallery-hover.animation_5 .image-holder:hover .info p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* Gallery hover animation_6: image zoom and info panel overlay fade in, text slide from left */
+.gallery-hover.animation_6 .info h3 {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.gallery-hover.animation_6 .info p {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.gallery-hover.animation_6 a:hover .info h3,
+.gallery-hover.animation_6 a:hover .info p,
+.gallery-hover.animation_6 .image-holder:hover .info h3,
+.gallery-hover.animation_6 .image-holder:hover .info p {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media (max-width: 1400px) {
+  .navbar.nav-v7 .container {
+    width: 100%;
+  }
+  .navbar-regular.nav-v7 .navbar-nav > li > a {
+    padding: 0 10px;
+  }
+  .section-header,
+  .about-us-v8-content .text-wrapper h1,
+  .about-us-v7-content .text-wrapper h1,
+  .about-us-v6-content .text-wrapper h1,
+  .specials-v3.home-specials h1,
+  .specials h1,
+  .events-container h1,
+  .about-us-page .about-us-s1-content h1,
+  .custom-modal .newsletter-popup .section-header {
+    font-size: 3.6em;
+  }
+  .about-us-v8-content .text-wrapper h2,
+  .custom_html_1-section h2,
+  .custom_html_2-section h2,
+  .tmt-section h2,
+  .reviews-v2-wrapper h2,
+  .map-newsletter h2 {
+    font-size: 1.4em;
+  }
+  .on-cover-content .section-wrapper .section-header,
+  .uk-overlay-panel h1 {
+    font-size: 3.8em;
+  }
+  .about-us-page .about-us-s1-content img {
+    max-width: 200px;
+  }
+  .specials h2 {
+    font-size: 1.3em;
+  }
+  .empty-content-message h2,
+  .empty-content-message h3,
+  .food-menu-page .empty-content-message h2,
+  .food-menu-page .empty-content-message h3 {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar-regular.nav-v7 .navbar-nav > li > a {
+    font-size: 1.1em;
+  }
+  .section-header,
+  .about-us-v8-content .text-wrapper h1,
+  .about-us-v7-content .text-wrapper h1,
+  .about-us-v6-content .text-wrapper h1,
+  .specials-v3.home-specials h1,
+  .specials h1,
+  .events-container h1,
+  .about-us-page .about-us-s1-content h1,
+  .custom-modal .newsletter-popup .section-header {
+    font-size: 3.2em;
+  }
+  .about-us-v8-content .text-wrapper h2,
+  .custom_html_1-section h2,
+  .custom_html_2-section h2,
+  .tmt-section h2,
+  .reviews-v2-wrapper h2,
+  .map-newsletter h2 {
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .on-cover-content .section-wrapper .section-header,
+  .uk-overlay-panel h1 {
+    font-size: 3.4em;
+  }
+  .banner-section h1 {
+    font-size: 1.2em;
+  }
+  .tmt-section p {
+    font-size: 1.2em;
+  }
+  .googlemap-v3-wrapper .map-item,
+  #map-v3-container {
+    min-height: 460px;
+  }
+  .map-newsletter .sph-email-subscription h2 {
+    font-size: 1.2em;
+  }
+  .custom-modal .newsletter-popup .sph-email-subscription h2,
+  .custom-modal .newsletter-popup .sph-email-subscription label h2 {
+    font-size: 1.2em;
+  }
+  .gallery-carousel-menu-wrapper .info p {
+    font-size: 1.2em;
+  }
+  .gallery-carousel-menu-wrapper .info p.menu-item-title {
+    font-size: 1.2em;
+  }
+  .contact-v3 .contact-location,
+  .contact-v3 .hours,
+  .contact-v3 .find-us {
+    font-size: 1.1em;
+  }
+  .footer-v2-wrapper a {
+    font-size: 1.1em;
+  }
+  .about-us-page .about-us-s1-content img {
+    max-width: 150px;
+  }
+  .drink-menu .food-menu-page h2,
+  .drink-menu .drink-menu-page h2 {
+    font-size: 1.8em;
+  }
+  .food-menu-grid h3,
+  .food-menu-grid .food-price {
+    font-size: 1.2em;
+  }
+  .food-menu-grid p,
+  .food-menu-grid .food-item-description {
+    font-size: 1.1em;
+  }
+  .onespecial {
+    font-size: 1.1em;
+  }
+  .events-container h2 {
+    font-size: 1.8em;
+  }
+  .events-container .event-main-text,
+  .events-container .event-info-text p,
+  .events-container .event-time {
+    font-size: 1.2em;
+  }
+  .empty-content-message h2,
+  .empty-content-message h3,
+  .food-menu-page .empty-content-message h2,
+  .food-menu-page .empty-content-message h3 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 1024px) {
+  #aboutus_v8:before,
+  #aboutus_v8_custom:before {
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 1023px) {
+  .navbar-regular.nav-v7 .navbar-nav > li > a {
+    font-size: 1em;
+  }
+  .section-header,
+  .about-us-v8-content .text-wrapper h1,
+  .about-us-v7-content .text-wrapper h1,
+  .about-us-v6-content .text-wrapper h1,
+  .specials-v3.home-specials h1,
+  .specials h1,
+  .events-container h1,
+  .about-us-page .about-us-s1-content h1,
+  .custom-modal .newsletter-popup .section-header {
+    font-size: 2.8em;
+  }
+  .custom-temp-btn,
+  .uk-overlay-panel a.custom-temp-btn,
+  .on-cover-content .section-wrapper a.custom-temp-btn,
+  .about-us-v6-wrapper .text-wrapper .text-content .custom-temp-btn,
+  .about-us-v7-content .text-wrapper .text-content .custom-temp-btn,
+  .about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn,
+  .custom-about-us-v8-wrapper.about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn,
+  .map-newsletter .sph-email-subscription .sph-submit-button,
+  .custom-modal .newsletter-popup .sph-email-subscription .sph-submit-button,
+  .addtocalendar.atc-style-blue .atcb-link,
+  .specials-v3.home-specials div a.custom-temp-btn,
+  .food-menu-nav .food-menu-nav-item,
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item,
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item {
+    font-size: 16px;
+  }
+  .on-cover-content .section-wrapper .section-header,
+  .uk-overlay-panel h1 {
+    font-size: 3em;
+  }
+  .about-us-v8-wrapper:before {
+    background-position: center center;
+  }
+  .about-us-v8-wrapper.custom-about-us-v8-wrapper:before {
+    background-position: center center;
+  }
+  .reservations-tmt-section {
+    background-position: center;
+  }
+  .order-tmt-section {
+    background-position: center;
+  }
+  .private-parties-tmt-section {
+    background-position: center;
+  }
+  .catering-tmt-section {
+    background-position: center;
+  }
+  .jobs-tmt-section {
+    background-position: center;
+  }
+  .custom_html_1-section {
+    background-position: center;
+  }
+  .reviews-v2-wrapper {
+    background-position: center !important;
+  }
+  .reviews-v2-wrapper h3 {
+    font-size: 1.1em;
+  }
+  .reviews-v2-wrapper .review-text p {
+    font-size: 1.1em;
+  }
+  .map-newsletter .text-wrapper:before {
+    background-position: center center;
+  }
+  .about-us-page .about-us-s1-content img {
+    max-width: 100px;
+  }
+  .about-page-content .about-us-v7-wrapper .about-us-v7-content:first-of-type {
+    background-position: center;
+  }
+  .about-page-content .about-us-v7-content .text-wrapper:before {
+    background-position: center;
+  }
+  .about-page-content .about-us-v7-content .text-wrapper .text-content,
+  .about-page-content .about-us-v7-content .text-wrapper .text-content * {
+    text-align: center !important;
+  }
+  .about-us-page .custom-temp-btn,
+  .about-us-page .about-us-v7-content .text-wrapper .text-content .custom-temp-btn,
+  .about-us-page .about-us-v8-wrapper .about-us-v8-item a.custom-temp-btn {
+    font-size: 16px;
+  }
+  .onespecial {
+    font-size: 1em;
+  }
+  .specials h2 {
+    font-size: 1.2em;
+  }
+  .empty-content-message h2,
+  .empty-content-message h3,
+  .food-menu-page .empty-content-message h2,
+  .food-menu-page .empty-content-message h3 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 991px) {
+  .navbar.nav-v7 .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-regular.nav-v7 .navbar-nav > li > a {
+    padding: 0 6px;
+  }
+  .social-icons-holder .contact-icon {
+    width: 28px;
+  }
+  .navbar.nav-v7 .navbar-tabs .socialnav {
+    display: none;
+  }
+  .map-newsletter .bar {
+    top: 0;
+  }
+  .about-us-page .about-us-s1-content {
+    text-align: center !important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar.nav-v7 .header-logo {
+    max-width: 150px;
+  }
+  .navbar-regular.nav-v7 .navbar-nav > li > a,
+  .nav-v7 li.drop-down-link div.drop-down {
+    font-size: 1.1em;
+    padding: 6px 15px;
+  }
+  .drink-menu .navbar-regular.nav-v7.nav-v4 .navbar-nav > li > a,
+  .navbar-regular.nav-v7.nav-v4.nav-scroll .navbar-nav > li > a {
+    background-color: #1C1B1A;
+  }
+  .navbar-regular.nav-v7 .navbar-nav > li > a:hover,
+  .navbar-regular.nav-v7 .navbar-nav > .active > a,
+  .navbar-regular.nav-v7 .navbar-nav > .active > a:focus,
+  .navbar-regular.nav-v7 .navbar-nav > .active > a:hover {
+    background-color: #fff !important;
+    color: #1C1B1A !important;
+  }
+  .navbar-regular.nav-v7 li.drop-down-link.active .drop-down .fa.fa-angle-up {
+    color: #1C1B1A !important;
+  }
+  .navbar.nav-v7 .navbar-tabs .socialnav {
+    display: inline-block;
+  }
+  li.drop-down-link .sub-menu {
+    padding: 0 30px 5px 30px;
+  }
+  .navbar-regular.nav-v6 .navbar-nav > li > a:before {
+    bottom: 0;
+  }
+  .navbar-regular.nav-v6 .navbar-nav > li > a:hover:before,
+  .navbar-regular.nav-v6 .navbar-nav > li > a:focus:before,
+  .navbar-regular.nav-v6 .navbar-nav > .active > a:before,
+  .navbar-regular.nav-v6 .navbar-nav > .active > a:focus:before,
+  .navbar-regular.nav-v6 .navbar-nav > .active > a:hover:before {
+    left: 0;
+    right: 0;
+  }
+  .section-header,
+  .about-us-v8-content .text-wrapper h1,
+  .about-us-v7-content .text-wrapper h1,
+  .about-us-v6-content .text-wrapper h1,
+  .specials-v3.home-specials h1,
+  .specials h1,
+  .events-container h1,
+  .about-us-page .about-us-s1-content h1,
+  .custom-modal .newsletter-popup .section-header {
+    font-size: 2.3em;
+  }
+  .about-us-v8-content .text-wrapper h2,
+  .custom_html_1-section h2,
+  .custom_html_2-section h2,
+  .tmt-section h2,
+  .reviews-v2-wrapper h2,
+  .map-newsletter h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  .navbar-fixed-bottom.nav-v1 .bottom-list-item a {
+    text-transform: uppercase;
+    font-family: "Lexend", sans-serif;
+    font-size: 14px;
+    padding: 15px 5px;
+  }
+  .on-cover-content .section-wrapper .section-header,
+  .uk-overlay-panel h1 {
+    margin-top: 0;
+    font-size: 2em;
+  }
+  .on-cover-content .buttons-group-holder a.custom-temp-btn,
+  .uk-overlay-panel .buttons-group-holder a.custom-temp-btn {
+    min-width: auto;
+  }
+  .banner-section {
+    padding: 13px 0;
+    text-align: center;
+  }
+  .banner-section h1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .banner-section h1 {
+    font-size: 1.1em;
+  }
+  .about-us-v8-content .text-wrapper {
+    text-align: center;
+  }
+  .about-us-v8-content .text-wrapper p {
+    text-align: center !important;
+  }
+  .about-us-v8-content .title-image h1::after,
+  .about-us-v8-content .title-image h1::before {
+    background-position: center !important;
+  }
+  .tmt-section {
+    padding: 2em 0;
+  }
+  .tmt-section p {
+    font-size: 1.1em;
+  }
+  .gallery-carousel-menu-wrapper .info p {
+    font-size: 1.1em;
+  }
+  .gallery-carousel-menu-wrapper .info p.menu-item-title {
+    font-size: 1.1em;
+  }
+  .custom_html_1-section {
+    padding: 2em 0;
+  }
+  .custom_html_1-section .container,
+  .custom_html_1-section h1 {
+    text-align: center;
+  }
+  .custom_html_1-section p {
+    text-align: center !important;
+  }
+  .custom_html_2-section {
+    padding: 2em 0;
+  }
+  .custom_html_2-section .container,
+  .custom_html_2-section h1 {
+    text-align: center;
+  }
+  .custom_html_2-section p {
+    text-align: center !important;
+  }
+  .reviews-v2-wrapper h3 {
+    font-size: 1em;
+  }
+  .reviews-v2-wrapper .review-text p {
+    font-size: 1em;
+  }
+  .googlemap-v3-wrapper .map-item.map-newsletter {
+    min-height: 440px;
+  }
+  .map-newsletter .text-wrapper .text-content {
+    top: -10px;
+  }
+  .map-newsletter .sph-email-subscription h2 {
+    font-size: 1.1em;
+  }
+  .custom-modal .newsletter-popup .sph-email-subscription h2,
+  .custom-modal .newsletter-popup .sph-email-subscription label h2 {
+    font-size: 1.1em;
+  }
+  .sph-response-message {
+    font-size: 1.3em;
+  }
+  .contact-v3 {
+    text-align: center;
+  }
+  .footer-v2-wrapper p {
+    font-size: 1.1em;
+  }
+  .footer-v2-wrapper a {
+    font-size: 1em;
+  }
+  .about-page-content {
+    padding-top: 0;
+  }
+  .about-us-s1-wrapper {
+    margin-top: 0;
+  }
+  .about-us-page .about-us-s1-content img {
+    max-width: 70px;
+  }
+  .food-menu-page .food-menu-v2-wrapper,
+  .drink-menu-page .drink-menu-v2-wrapper {
+    padding-top: 45px;
+  }
+  .food-menu-nav .food-menu-nav-item,
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item,
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item {
+    padding: 7px 20px;
+    border: none;
+  }
+  .food-menu-nav .food-menu-nav-item:hover,
+  .food-menu-nav .food-menu-nav-item:focus,
+  .food-menu-nav .food-menu-nav-item.active,
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:hover,
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:focus,
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item.active,
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:hover,
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:focus,
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item.active {
+    border: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .food-menu-nav .food-menu-nav-item {
+    border-bottom: 2px solid #fff;
+  }
+  .food-menu-nav .food-menu-nav-item:hover,
+  .food-menu-nav .food-menu-nav-item:focus,
+  .food-menu-nav .food-menu-nav-item.active {
+    border-bottom: 2px solid #fff;
+  }
+  .food-menu-nav li.food-menu-nav-li:first-of-type .food-menu-nav-item {
+    border-top: 2px solid #fff;
+  }
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item {
+    border-bottom: 2px solid #fff;
+  }
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:hover,
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:focus,
+  .food-menu-v2-wrapper .food-menu-nav .food-menu-nav-item.active {
+    border-bottom: 2px solid #fff;
+  }
+  .food-menu-v2-wrapper .food-menu-nav li.food-menu-nav-li:first-of-type .food-menu-nav-item {
+    border-top: 2px solid #fff;
+  }
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item {
+    border-bottom: 2px solid #fff;
+  }
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:hover,
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item:focus,
+  .drink-menu-v2-wrapper .food-menu-nav .food-menu-nav-item.active {
+    border-bottom: 2px solid #fff;
+  }
+  .drink-menu-v2-wrapper .food-menu-nav li.food-menu-nav-li:first-of-type .food-menu-nav-item {
+    border-top: 2px solid #fff;
+  }
+  .drink-menu .food-menu-page h2,
+  .drink-menu .drink-menu-page h2 {
+    font-size: 1.6em;
+  }
+  .food-menu-grid h3,
+  .food-menu-grid .food-price {
+    font-size: 1.1em;
+  }
+  .food-menu-grid p,
+  .food-menu-grid .food-item-description {
+    font-size: 1.05em;
+  }
+  .food-menu-page .drink-menu-v2-wrapper .food-menu-grid-item-content {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  .events-container .container {
+    margin-bottom: 150px;
+  }
+  .events-container h2 {
+    font-size: 1.6em;
+  }
+  .events-container .event-main-text,
+  .events-container .event-info-text p,
+  .events-container .event-time {
+    font-size: 1.1em;
+  }
+  /* Catering custom page with menu */
+  .party.catering .food-menu-nav .food-menu-nav-item {
+    border: none;
+    border-bottom: 2px solid #fff;
+  }
+  .party.catering .food-menu-nav .food-menu-nav-item:hover,
+  .party.catering .food-menu-nav .food-menu-nav-item:focus,
+  .party.catering .food-menu-nav .food-menu-nav-item.active {
+    border: none;
+    border-bottom: 2px solid #fff;
+  }
+  .party.catering .food-menu-nav li.food-menu-nav-li:first-of-type .food-menu-nav-item {
+    border-top: 2px solid #fff;
+  }
+  /* Catering custom page with menu end */
+  .tmt-page.party-background.drink-menu .pagecontent {
+    padding-top: 0;
+  }
+  .drink-menu .pagecontent {
+    padding-top: 70px;
+  }
+  .empty-content-message h2,
+  .empty-content-message h3,
+  .food-menu-page .empty-content-message h2,
+  .food-menu-page .empty-content-message h3 {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 320px) {
+  .section-header,
+  .about-us-v8-content .text-wrapper h1,
+  .about-us-v7-content .text-wrapper h1,
+  .about-us-v6-content .text-wrapper h1,
+  .specials-v3.home-specials h1,
+  .specials h1,
+  .events-container h1,
+  .about-us-page .about-us-s1-content h1,
+  .custom-modal .newsletter-popup .section-header {
+    font-size: 1.8em;
+  }
+  .about-us-v8-content .text-wrapper h2,
+  .custom_html_1-section h2,
+  .custom_html_2-section h2,
+  .tmt-section h2,
+  .reviews-v2-wrapper h2,
+  .map-newsletter h2 {
+    font-size: 1.1em;
+  }
+  .navbar-fixed-bottom.nav-v1 .bottom-list-item a {
+    font-size: 12px;
+  }
+  .on-cover-content .section-wrapper .section-header,
+  .uk-overlay-panel h1 {
+    font-size: 1.8em;
+  }
+  .footer-v2-wrapper a {
+    font-size: 0.9em;
+  }
+  .empty-content-message h2,
+  .empty-content-message h3,
+  .food-menu-page .empty-content-message h2,
+  .food-menu-page .empty-content-message h3 {
+    font-size: 1.1em;
+  }
+}
+/* START website specific style */
+.about-us-v8-wrapper .image-only-item .about-us-v8-image {
+  height: 550px;
+}
+
+.custom_html_1-section {
+  padding: 20em 0;
+}
+
+.custom_html_2-section {
+  padding: 6em 0;
+}
+.custom_html_2-section h2 {
+  max-width: 850px;
+  margin: 20px auto;
+}
+
+@media (max-width: 1400px) {
+  .about-us-v8-wrapper .image-only-item .about-us-v8-image {
+    height: 400px;
+  }
+  .custom_html_1-section {
+    padding: 12em 0;
+  }
+  .custom_html_2-section {
+    padding: 4em 0;
+  }
+}
+@media (max-width: 767px) {
+  .about-us-v8-wrapper .image-only-item .about-us-v8-image {
+    height: 300px;
+  }
+  .about-us-v8-wrapper .image-only-item .about-us-v8-content {
+    display: none;
+  }
+  .custom_html_1-section {
+    padding: 7em 0;
+  }
+  .custom_html_2-section {
+    padding: 2em 0;
+  }
+}
