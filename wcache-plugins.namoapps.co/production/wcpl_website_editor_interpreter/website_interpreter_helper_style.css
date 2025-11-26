@@ -1,0 +1,71 @@
+/* Hide/Show sections */
+.hide-show-section {
+  position: relative;
+}
+.hide-show-section[data-hidden="no"] .section-wrapper,
+.hide-show-section[data-hidden="yes"] .section-wrapper *,
+.hide-show-section[data-hidden="no"]  > div,
+.hide-show-section[data-hidden="yes"]  > div * {
+  visibility: visible;
+  height: auto;
+  min-height: initial;
+  transition: all .4s ease-in-out;
+}
+.hide-show-section[data-hidden="no"] .section-wrapper.gallery-v4-wrapper {
+  min-height: 308px;
+}
+.hide-show-section[data-hidden="no"] .section-wrapper.newsletter-section {
+  min-height: 500px;
+}
+.hide-show-section[data-hidden="yes"] .section-wrapper,
+.hide-show-section[data-hidden="yes"] .section-wrapper *,
+.hide-show-section[data-hidden="yes"] > div,
+.hide-show-section[data-hidden="yes"] > div * {
+  visibility: hidden;
+  height: 0;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  transition: all .4s ease-in-out;
+}
+/* Editable Elements */
+body:not(.edit-mode) .editor-empty-element,
+body:not(.edit-mode) li.drop-down-link .sub-menu a.editor-empty-element {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Common style */
+/* Section style changes needed for applying background image filter (backdrop-filter property) */
+.home-page.custom-style article,
+.home-page.custom-style .footer-v2-wrapper,
+.banner-section,
+.contact-v3,
+#CustomModal .modal-content {
+  position: relative;
+}
+.home-page.custom-style article .section-wrapper,
+.home-page.custom-style .footer-v2-wrapper,
+#CustomModal .modal-content {
+  z-index: 0;
+}
+.home-page.custom-style article .section-wrapper:not(.about-us-v7-wrapper):not(.about-us-v8-wrapper):not(.map-newsletter .text-wrapper):not(.food-menu-v2-wrapper):not(.drink-menu-v2-wrapper)::before,
+.home-page.custom-style .footer-v2-wrapper::before,
+#CustomModal .modal-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+.home-page.custom-style article .section-wrapper .container,
+.home-page.custom-style .footer-v2-wrapper .container {
+  z-index: 1;
+}
+.contact-v3::before {
+  background: none;
+}
