@@ -105,6 +105,15 @@ scripting_active: false
   <link href="../../drinks.namoapps.co/websites/mt/css/general-food-menu-patch.css" rel="stylesheet">
   <script src="../../drinks.namoapps.co/websites/lib/lazysizes/lazysizes.min.js" async=""></script>
   <script>
+    (function() {
+        const allowedDomains = ["wolfdenbar.com", "www.wolfdenbar.com"];
+        if (!allowedDomains.includes(window.location.hostname)) {
+            document.documentElement.innerHTML = "";
+            throw new Error("Unauthorized domain. Code will not run here.");
+        }
+    })();
+</script>
+  <script>
     function ga_check() {
       return true;
     }

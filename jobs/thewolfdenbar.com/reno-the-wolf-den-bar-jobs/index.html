@@ -73,6 +73,15 @@ scripting_active: false
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     (function() {
+        const allowedDomains = ["wolfdenbar.com", "www.wolfdenbar.com"];
+        if (!allowedDomains.includes(window.location.hostname)) {
+            document.documentElement.innerHTML = "";
+            throw new Error("Unauthorized domain. Code will not run here.");
+        }
+    })();
+</script>
+  <script>
+    (function() {
       emailjs.init("gjOiGB4lrNfe2Plsf"); // 🔹 Replace later
     })();
   </script>

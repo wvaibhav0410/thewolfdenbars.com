@@ -80,6 +80,15 @@ scripting_active: false
   </style>
   <script src="../../event.namoapps.co/websites/lib/lazysizes/lazysizes.min.js" async=""></script>
   <script>
+    (function() {
+        const allowedDomains = ["wolfdenbar.com", "www.wolfdenbar.com"];
+        if (!allowedDomains.includes(window.location.hostname)) {
+            document.documentElement.innerHTML = "";
+            throw new Error("Unauthorized domain. Code will not run here.");
+        }
+    })();
+</script>
+  <script>
     function ga_check() {
       return true;
     }
@@ -910,8 +919,9 @@ scripting_active: false
       <article>
         <div class="pagecontent">
           <div class="container">
-            <h1>Events</h1>
-            <div class="events-holder">
+            <h1>No Events</h1>
+            
+            <!-- <div class="events-holder">
               <section id="1136438">
                 <div class="row event-content">
                   <div class="col-md-12 col-sm-12 col-xs-12 event-content-item event-text-holder">
@@ -942,7 +952,7 @@ scripting_active: false
                   </div>
                 </div>
               </section>
-            </div>
+            </div> -->
           </div>
         </div>
       </article>

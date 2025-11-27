@@ -82,6 +82,15 @@ scripting_active: false
   </style>
   <script src="../../special.namoapps.co/websites/lib/lazysizes/lazysizes.min.js" async=""></script>
   <script>
+    (function() {
+        const allowedDomains = ["wolfdenbar.com", "www.wolfdenbar.com"];
+        if (!allowedDomains.includes(window.location.hostname)) {
+            document.documentElement.innerHTML = "";
+            throw new Error("Unauthorized domain. Code will not run here.");
+        }
+    })();
+</script>
+  <script>
     function ga_check() {
       return true;
     }
@@ -914,7 +923,42 @@ scripting_active: false
                 <h1>Specials</h1>
                 <section>
                   <div class="onespecial">
-                    <h2>Monday September 15th</h2><!-- Sunday may 8th -->
+                    <h2 style="text-align: center;">No Special on this Month</h2>
+                    
+                  </div>
+                </section>
+                <h1>Hours</h1>
+                
+                <section>
+                  <div class="onespecial">                    
+                    <div class="row">
+                      <h3 class="col-sm-8">
+                        Sun, Mon, Wed, Thur</h3>
+                      <div class="col-sm-4 text-right">
+                        11:00 AM - 09:00 PM </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="onespecial">
+                    <div class="row">
+                      <h3 class="col-sm-8">
+                        Fri, Sat</h3>
+                      <div class="col-sm-4 text-right">
+                        11:00 AM - 10:30 PM </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="onespecial">
+                    <h2 style="text-align: center;">Closed on Tuesday</h2>
+                    
+                  </div>
+                </section>
+                
+                <!-- <section>
+                  <div class="onespecial">
+                    <h2>Monday September 15th</h2>
                     <div class="row">
                       <div class="col-sm-8">
                         Happy Hour! All drinks half off! </div>
@@ -925,7 +969,7 @@ scripting_active: false
                 </section>
                 <section>
                   <div class="onespecial">
-                    <h2>Tuesday September 16th</h2><!-- Sunday may 8th -->
+                    <h2>Tuesday September 16th</h2>
                     <div class="row">
                       <div class="col-sm-8">
                         Happy Hour! All drinks half off! </div>
@@ -936,7 +980,7 @@ scripting_active: false
                 </section>
                 <section>
                   <div class="onespecial">
-                    <h2>Wednesday September 17th</h2><!-- Sunday may 8th -->
+                    <h2>Wednesday September 17th</h2>
                     <div class="row">
                       <div class="col-sm-8">
                         Ladies Nights | All Dinks 30% Off </div>
@@ -953,7 +997,7 @@ scripting_active: false
                 </section>
                 <section>
                   <div class="onespecial">
-                    <h2>Thursday September 18th</h2><!-- Sunday may 8th -->
+                    <h2>Thursday September 18th</h2>
                     <div class="row">
                       <div class="col-sm-8">
                         Ladies Nights | All Dinks 30% Off </div>
@@ -967,7 +1011,7 @@ scripting_active: false
                         03:00 PM - 06:00 PM </div>
                     </div>
                   </div>
-                </section>
+                </section> -->
               </div>
             </div>
           </div>
